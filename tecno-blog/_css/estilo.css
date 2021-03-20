@@ -6,7 +6,7 @@
 }
 body{
 	background: #fefefe;
-	font-size: 1em;
+	font-size: 16px;
 	font-family: oswald;
 }
 
@@ -56,22 +56,47 @@ body{
 	/*background: #f7b600;*/
 	background: rgba(0,0,0,.8);
 	height: 100px;
+	/*display: flex;*/
+	
+	/*justify-content: space-around;*/
+}
+#rodape-conteudo{
+	/*border: 1px solid #09f;*/
+	width: 920px;
+	justify-content: space-between;
 	display: flex;
 	align-items: center;
 	text-align: center;
-	justify-content: center;
+	height: 80px;
+	margin: 0 auto;
+	padding: 10px 0px 10px 0px;
+
 }
 #rodape p{
 	font-size: 1.5em;
 	color: #fefefe;
 }
-
+#redes{
+	/*border: 1px solid #d9d9d9;*/
+	display: flex;
+}
+.icon{
+	height: 50px;
+	width: 50px;
+	opacity: .4;
+	text-decoration: none;
+}
+.icon:hover{
+	cursor: pointer;
+	transition: all linear .5s;
+	opacity: 1;
+}
 
 /*MENU*/
 a:link,a:visited{
 	color:black;
 }
-a:hover{
+#menu a:hover{
 	background: rgba(0,0,0,.8);
 	font-weight: bold;
 }
@@ -84,11 +109,23 @@ a:hover{
 
 
 /*FORMATAÇÕES GERAIS*/
-#postagem{
-	padding: 10px;
-/*	border: 1px solid red;
+#postagem,.postagem{
+	padding: 20px;
+/*	border: 1px solid #d9d9d9;
 */	clear: both;	
+	border-right: 1px solid #d9d9d9;
+
 	position: relative;
+	padding-bottom: 10px;
+}
+
+.postagem:nth-child(1n+2){
+	padding: 20px;
+	border-top: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+	clear: both;	
+	position: relative;
+	padding-bottom: 10px;
 }
 .white{
 	color:#fefefe;
@@ -115,6 +152,10 @@ a:hover{
 	text-indent: 2em;
 	/*border: 1px solid;*/
 	padding: 5px;
+	font-size: 1.2em;
+}
+.cidade{
+	margin-left: 22px;
 }
 .titulo-materia{
 	text-align: left;

@@ -25,8 +25,8 @@
 		<!-- CONTEUDO DO SITE -->
 		<main>
 			<div id="area-principal">
-				<div id="area-postagens">
-					<div id="div-formulario">
+				<article id="area-postagens">
+					<section id="div-formulario">
 						
 						<h2 class="titulo-h2">Contato</h2>
 						<!-- <br> -->
@@ -43,10 +43,10 @@
 							<input type="button" class="btn" value="Enviar" onclick="verificar();">
 							<div id="resultado"></div>
 						</form>
-					</div>
-				</div>
+					</section>
+				</article>
 
-				<div id="area-lateral">
+				<aside id="area-lateral">
 					<div id="lateral">
 						
 						<div class="postagem-lateral">
@@ -57,11 +57,17 @@
 							<h3 class="titulo-postagem">Postagem Recentes</h3>
 						</div>
 					</div>
-				</div>
+				</aside>
 			</div>
 		</main> 	
-		<footer id="rodape"><p>Todos os direitos reservados &copy;</p>
-			
+		<footer id="rodape">
+			<div id="rodape-conteudo">
+				<p>Todos os direitos reservados &copy;</p>
+				
+				<div id="redes">
+					<a href="https://github.com/hochiminh1996" target="_black"><img src="../_img/github.png" class="icon"></a>
+				</div>
+			</div>
 		</footer>
 		<script type="text/javascript" src="../_js/arquivo.js"></script>
 	</body>
